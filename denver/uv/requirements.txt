@@ -1,0 +1,12 @@
+# Same set as ../zephyr-devshell-4.3.1/conan/recipes/python-cache/denver/requirements.txt,
+# minus 'conan' itself -- nothing here installs via conan any more. See
+# requirements-from-git.txt for the git-pinned packages (west, ctcache,
+# git-nested), and README.md for why there is no requirements.final.txt
+# lockfile here.
+
+# General
+uv==0.9.13
+pip==25.3
+west==1.5.0
+ctcache @ git+https://github.com/matus-chochlik/ctcache.git@0c7fee26e09ae8a393ed7d56164102da118ab23a
+jsonschema==4.25.1
